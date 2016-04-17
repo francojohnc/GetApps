@@ -1,17 +1,28 @@
 package com.example.getapps.getapps;
 
+import android.graphics.drawable.Drawable;
+
 
 public class AppInfo {
-	private String appName;
-	private String packageName;
-	public void setAppInfo(String a, String b) {
-		this.appName = a;
-		this.packageName = b;
-	}
 	public String getAppName() {
-		return this.appName;
+		return appName;
+	}
+	public void setAppName(String appName) {
+		this.appName = appName;
 	}
 	public String getPackageName() {
-		return this.packageName;
+		return packageName;
 	}
+	public void setPackageName(String packageName) {
+		this.packageName = packageName;
+	}
+	public Drawable getIcon() {
+		return icon;
+	}
+	public void setIcon(Drawable icon) {
+		this.icon = icon;
+	}
+	private String appName;
+	private String packageName;
+	private Drawable icon;
 }
